@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero{
+    background-image: url(../styles/image/aniversario3.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: auto;
+    height: 660px;
+    margin-top: -45px;
+    display: flex;
+    justify-content: center;
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: '';
+        opacity: .3;
+    }
+
+
+    &__text{
+        font-size: 25px;
+        color:#fff;
+        position: relative;
+        padding-top: 200px;
+
+        &_contador{
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            color:#fff;
+            font-weight: bold;
+        }
+    }
+
+    &__info{
+
+        display: flex;
+        justify-content: center;
+
+        &_bar{
+            display: flex;
+            gap: 80px;
+            list-style: none;
+            background-color: #fff;
+            padding: 25px;
+            color:#000;
+    
+        }
+    }
+
+
+    @media (max-width: 640px){
+       .hero{
+        display: block;
+
+        &__text{
+            font-size: 15px;
+            line-height: 24px;
+            text-align: center;
+            display: block;
+
+            &_contador{
+                font-size: 25px;
+            }
+
+            h1{
+                padding: auto;
+            }
+
+        }
+    
+        &__info_bar{
+            display: block;
+            padding-left: 15px;
+            width: 250px;
+    
+        }
+       }
+    }
+}
+
+.button{
+    padding: 15px;
+    background-color: rgb(185, 93, 108);
+    color:#fff;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgb(170, 73, 89);
+        text-decoration: underline;
+    }
+}
+
+.container{
+    margin-top: 0px;
+    padding-left: 45px;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+
+    @media (max-width: 640px){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.texto{
+    background-image: linear-gradient(rgb(241, 66, 96), rgb(185, 93, 108));
+    &_conteudo{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding-top: 25px;
+
+        &_text{
+            color: #fff;
+            width: 500px;
+            
+        }
+    
+        &_img{
+            max-width: 500px;
+        }
+    }
+
+    @media (max-width: 640px){
+        .texto{
+            display: block;
+            &_conteudo{
+               display: grid;
+               justify-content: center;
+
+                &_text{
+                    font-size: 15px;
+                    text-align: center;
+                    width: 300px;
+                }
+
+                &_img{
+                    max-width: 300px;
+                }
+    
+    
+            }
+        }
+}
+}
+
+.title {
+    padding-top: 25px;
+    padding-left: 50px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.local{
+    background-image: linear-gradient( rgb(185, 93, 108), rgb(143, 6, 29));
+    &_end{
+
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        justify-content: space-between;
+
+
+        iframe{
+            width: 550px;
+            height: 380px;
+        }
+        
+        &__mapa{
+            display: flex;
+            justify-content: center;
+        }
+
+        &__text{
+            color: #fff;
+            font-size: 25px;
+            font-weight: 400;
+            padding-right: 250px;
+        }
+
+    }
+
+    @media (max-width: 640px){
+        .local{
+            display: block;
+
+            &_end{
+
+                display: grid;
+                   justify-content: center;
+    
+                iframe{
+                    width: 300px;
+                   height: 300px;
+                }
+    
+                &__text{
+    
+                    padding-right: 0;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+   
+}
+
+.footer{
+    padding: 10px;
+    font-weight: bold;
+
+    p{
+        display: flex;
+        justify-content: center;
+    }
+}
